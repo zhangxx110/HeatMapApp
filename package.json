@@ -1,9 +1,10 @@
 {
-  "name": "HeatMap",
+  "name": "HeatMapApp",
   "version": "0.1.0",
   "main": "main.js",
   "devDependencies": {
-    "electron": "^1.2.5"
+    "electron": "^1.2.5",
+    "electron-packager": "^8.4.0"
   },
   "dependencies": {
     "angular": "^1.5.7",
@@ -16,6 +17,7 @@
     "node-file-manager": "^0.3.2"
   },
   "scripts": {
-    "start": "/Users/zhangxiongxiang/Applications/electron-v1/Electron.app/Contents/MacOS/Electron ."
+    "start": "/Users/zhangxiongxiang/Applications/electron-v1/Electron.app/Contents/MacOS/Electron .",
+    "packager": "electron-packager ./MapDemo HeatMap --all --out ./OutApp --version 1.2.5 --overwrite --icon=./MapDemo/icon/icon.png"
   }
 }
